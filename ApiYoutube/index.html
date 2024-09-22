@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Search</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .back-button {
+            margin-bottom: 1em;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            /* Bigger button for larger screens */
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        .back-button:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="back-button" onclick="history.back()">
+        &#8592; Back
+    </button>
+    <div class="container">
+        <h1>Video Search</h1>
+        <div class="search-container">
+            <input type="text" id="dailymotion-query" placeholder="Search for videos...">
+            <button onclick="searchDailymotion()">Search</button>
+        </div>
+        <div id="dailymotion-results" class="results"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

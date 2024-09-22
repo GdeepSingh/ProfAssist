@@ -18,8 +18,9 @@
             <div class="header-Action">
                 <!-- sidebar button -->
                 <a id="logoLink" href="#navbar"><img src="../images/WhatsApp Image 2024-09-21 at 4.57.36 PM.jpeg"></a>
-                <input placeholder="Search..." type="text" id="searchBar">
-                <img src="../images/WhatsApp Image 2024-09-21 at 4.46.47 PM.jpeg">
+                <!-- <input placeholder="Search..." type="text" id="searchBar"> -->
+                <a href="../ApiYoutube/index.html"><img
+                        src="../images/WhatsApp Image 2024-09-21 at 4.46.47 PM.jpeg"></a>
             </div>
             <div class="name">
                 <h1>
@@ -33,6 +34,7 @@
         <div class="navbar" id="navbar">
             <span class="close-btn" id="closeBtn">&times;</span> <!-- Close button (Cross) -->
             <div class="link account"><a href="../navFolder/account.html">Account</a></div>
+            <div class="link account"><a href="../professor_card/profcard.html">Top Professer</a></div>
             <div class="link"><a href="">Contact</a></div>
             <div class="link setting"><a href="">Setting</a></div>
             <div class="link logout"><a href="../singUp/index (1).html">Log Out</a></div>
@@ -46,7 +48,17 @@
             <!-- prof here -->
             <div class="profArea" id="profArea">
                 <p>TOP PROFESSER</p>
-                <div class="profIdCard">idhere</div>
+                <div class="profIdCard">
+                    <div id="Photo">
+                        <!-- Make sure the image path is correct -->
+                        <img src="../images/prof.png" alt="Professor Photo">
+                    </div>
+                    <div class="profDetails">
+                        <h3>Prof. Prakash Sundaresan</h3>
+                        <h5>Indian Institute of Technology, <br>UW Foster School of Business</h5>
+                    </div>
+
+                </div>
             </div>
 
             <div class="line"></div>
@@ -54,24 +66,65 @@
             <!-- courses here -->
             <div class="course-cointainer">
                 <h2>TOP COURSES</h2>
-                <div class="courseCard">courseHere</div>
-                <div class="courseCard">courseHere</div>
-                <div class="courseCard">courseHere</div>
-                <div class="courseCard">courseHere</div>
-                <div class="courseCard">courseHere</div>
+                <div class="courseCard">
+                    <!-- https://youtu.be/UmnCZ7-9yDY?si=lotOQsU8qyunNIHi -->
+                    <!-- onclick="https://youtu.be/UmnCZ7-9yDY?si=lotOQsU8qyunNIHi" -->
+                    <h3>Java Tutorial, Learn Java in 2 Hours</h3>
+                    <h5>Java is a high-level, object-oriented programming language <br>known for its platform
+                        independence, as programs run on <br>the Java Virtual Machine (JVM).</h5>
+                </div>
+                <div class="courseCard">
+                    <!-- https://youtu.be/HcOc7P5BMi4?si=5Xgd7kcvL_2uDXNQ -->
+                    <h3>HTML Tutorial for Beginners </h3>
+                    <h5>HTML (HyperText Markup Language) is the standard language used to structure and display content
+                        on the web through <br>elements like headings, paragraphs, links, and images.</h5>
+                </div>
+                <div class="courseCard">
+                    <!-- https://youtu.be/VlPiVmYuoqw?si=Dm1PhW-AbKjAIuZU -->
+                    <h3>JavaScript Tutorial (2024) </h3>
+                    <h5>JavaScript (JS) is a dynamic, high-level programming language used to make web pages interactive
+                        by manipulating the DOM <br>and handling events.</h5>
+                </div>
+                <div class="courseCard">
+                    <!-- https://youtu.be/UrsmFxEIp5k?si=O1q46PNcvs9Tg2X9 -->
+                    <h3>Complete Python Course</h3>
+                    <h5>Python is a versatile, high-level programming language known <br>for its readability and ease of
+                        use, commonly used for web development, data analysis, and automation.</h5>
+                </div>
             </div>
         </div>
 
         <div class="line"></div>
 
         <div class="review-container">
-            <div class="review"></div>
-            <div class="review"></div>
-            <div class="review"></div>
-            <div class="review"></div>
-            <div class="review"></div>
-            <div class="review"></div>
-            <div class="review"></div>
+            <div class="review">
+                <h4>StudyFlow by Emily</h4>
+                <h5>User-friendly, Smooth communication <br>among students. and efficient!</h5>
+            </div>
+            <div class="review">
+                <h4>Study Buddy by Alex</h4>
+                <h5>This app is a game-changer! It makes studying fun and efficient.</h5>
+            </div>
+            <div class="review">
+                <h4>LearnEasy by Emily</h4>
+                <h5>Finally, an app that simplifies my coursework. Kudos!</h5>
+            </div>
+            <div class="review">
+                <h4>SmartNotes by Liam</h4>
+                <h5>I love how organized my study materials are now. Thanks!</h5>
+            </div>
+            <div class="review">
+                <h4>GradeGuru by Ava</h4>
+                <h5>Intuitive interface, instant access—what more could a student ask for?</h5>
+            </div>
+            <div class="review">
+                <h4>StudyFlow by Maya</h4>
+                <h5>Helps me stay on top of assignments. A must-have!</h5>
+            </div>
+            <div class="review">
+                <h4>CampusConnect by Ethan</h4>
+                <h5>Connecting students seamlessly. Well done!</h5>
+            </div>
         </div>
 
         <div class="footer-container">
@@ -86,6 +139,23 @@
             <a href="#">about us</a>
             <a href="#">contact us</a>
         </div>
+
+        <div class="chat-container">
+            <button id="chatToggleButton" onclick="">Chat with Ana</button> <!-- Add this line -->
+            <div class="chat-header" id="chatHeader" style="display: none;">
+                <h3>ProfsAssist Chatbot - Ana</h3>
+            </div>
+            <div class="chat-body" id="chatBody" style="display: none;">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="chat-footer" id="chatFooter" style="display: none;">
+                <input type="text" id="chatInput" class="chat-input" placeholder="Type a message...">
+                <button onclick="sendMessage()" class="chat-send">Send</button>
+            </div>
+        </div>
+
+
+        <script src="../javascript/aibot.js" defer></script>
     </div>
 
     <script>
