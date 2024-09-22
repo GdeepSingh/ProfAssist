@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #bcbefa;
+    font-size: 4em;
+}
+h1{
+    font-size: 4em;
+}
+span{
+    font-weight: lighter;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 400px; /* Adjust for mobile width */
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px; /* Smaller font for mobile */
+    color: #1d1c1c;
+    margin-bottom: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px;
+}
+
+.option {
+    display: block; /* Change to block for better mobile fit */
+    background: #e8e8e8;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px; /* Smaller font for mobile */
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and text */
+    transform: scale(1.5); /* Larger checkbox for easier interaction */
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    opacity: 0.5;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: #5e239d; /* Purple background */
+    color: white;
+}
+
+

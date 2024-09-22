@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfAssist</title>
+
+    <link href="mainPage.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <div id="headerArea" class="headerArea">
+
+            <div class="header-Action">
+                <!-- sidebar button -->
+                <a id="logoLink" href="#navbar"><img src="../images/WhatsApp Image 2024-09-21 at 4.57.36 PM.jpeg"></a>
+                <input placeholder="Search..." type="text" id="searchBar">
+                <img src="../images/WhatsApp Image 2024-09-21 at 4.46.47 PM.jpeg">
+            </div>
+            <div class="name">
+                <h1>
+                    ProfAssist
+                </h1>
+                <p>"UNLOCK THE POWER OF COMPUTING: LEARN, CODE, SUCCEED!"</p>
+            </div>
+
+        </div>
+
+        <div class="navbar" id="navbar">
+            <span class="close-btn" id="closeBtn">&times;</span> <!-- Close button (Cross) -->
+            <div class="link account"><a href="../navFolder/account.html">Account</a></div>
+            <div class="link"><a href="">Contact</a></div>
+            <div class="link setting"><a href="">Setting</a></div>
+            <div class="link logout"><a href="../singUp/index (1).html">Log Out</a></div>
+
+        </div>
+
+        <div class="line line1"></div>
+
+        <div class="main" id="main">
+
+            <!-- prof here -->
+            <div class="profArea" id="profArea">
+                <p>TOP PROFESSER</p>
+                <div class="profIdCard">idhere</div>
+            </div>
+
+            <div class="line"></div>
+
+            <!-- courses here -->
+            <div class="course-cointainer">
+                <h2>TOP COURSES</h2>
+                <div class="courseCard">courseHere</div>
+                <div class="courseCard">courseHere</div>
+                <div class="courseCard">courseHere</div>
+                <div class="courseCard">courseHere</div>
+                <div class="courseCard">courseHere</div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="review-container">
+            <div class="review"></div>
+            <div class="review"></div>
+            <div class="review"></div>
+            <div class="review"></div>
+            <div class="review"></div>
+            <div class="review"></div>
+            <div class="review"></div>
+        </div>
+
+        <div class="footer-container">
+            <a href="#">Career</a>
+            <a href="#">blog</a>
+            <a href="#">help and support</a>
+            <a href="#">affiliate</a>
+            <a href="#">investors</a>
+            <a href="#">Terms</a>
+            <a href="#">privacy policy</a>
+            <a href="#">accessibility statement</a>
+            <a href="#">about us</a>
+            <a href="#">contact us</a>
+        </div>
+    </div>
+
+    <script>
+        const logoLink = document.getElementById('logoLink');
+        const navbar = document.getElementById('navbar');
+        const wrapper = document.getElementById('wrapper');
+        const closeBtn = document.getElementById('closeBtn');
+
+        // Toggle navbar on logo click
+        logoLink.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default behavior of anchor tag
+            navbar.classList.toggle('open');
+        });
+
+        // Close navbar on close button click
+        closeBtn.addEventListener('click', function () {
+            navbar.classList.remove('open');
+        });
+
+        // Close navbar when clicking anywhere in the wrapper
+        wrapper.addEventListener('click', function (e) {
+            if (navbar.classList.contains('open') && !navbar.contains(e.target)) {
+                navbar.classList.remove('open');
+            }
+        });
+
+        // Prevent navbar from closing when clicking inside the navbar itself
+        navbar.addEventListener('click', function (e) {
+            e.stopPropagation(); // Stops the click event from bubbling up to the wrapper
+        });
+
+    </script>
+</body>
+
+</html>

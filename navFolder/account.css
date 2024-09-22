@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    /* Adjusted for larger screens */
+    padding: 30px;
+    /* Increased padding for bigger UI */
+    text-align: center;
+    position: relative;
+    /* Allows positioning the back button */
+    transition: box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    /* Bigger button for larger screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.back-button:hover {
+    color: #0056b3;
+}
+
+.profile-header {
+    margin-top: 50px;
+    /* Increased margin for larger devices */
+    position: relative;
+}
+
+.profile-photo {
+    width: 150px;
+    /* Increased size for larger screens */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #007bff;
+}
+
+h2 {
+    font-size: 28px;
+    /* Larger font size */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input[type="email"] {
+    font-size: 18px;
+    /* Increased font size */
+    color: #777;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    /* More space between sections */
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    /* Increased margin between fields */
+    padding-bottom: 10px;
+}
+
+strong {
+    color: #007bff;
+    font-size: 20px;
+    /* Increased font size */
+}
+
+.editable-input {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    /* Increased font size */
+    color: #333;
+    text-align: right;
+    width: 70%;
+}
+
+.editable-input:focus {
+    outline: none;
+    border-bottom: 1px solid #007bff;
+}
+
+input[type="password"] {
+    font-family: 'Arial', sans-serif;
+}

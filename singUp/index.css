@@ -1,0 +1,128 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bcbefa80;
+}
+
+span{
+    font-weight: lighter;
+}
+.login-container{
+    color: #a7aafa;
+    background-color: white;
+    height: 35em;
+    padding: .6em;
+    border: #878bfc 2px solid;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(1,1,1,1);
+    margin-top: 5em;
+}
+
+h1{
+    font-size: 3em;
+
+}
+.inputArea{
+
+    margin-bottom: 1em;
+    height: 3em;
+    border-radius: 5px;
+
+}
+
+a{
+    text-align: center;
+}
+.line{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em;
+}
+
+.first{
+    margin: .3em;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.extra{
+    margin-bottom: .4em;
+    border: black solid 2px;
+    border-radius: 10px;
+}
+.google, .github, .facebook {
+    background-color: #e8e8e8;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0.5;
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google::before, .github::before, .facebook::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    width: 5em;
+    height: 5em;
+    background-size: cover;
+
+}
+
+.facebook{
+    background-color: rgb(22, 22, 224);
+    color: white;
+}
+
+.github{
+    background-color: black;
+    color: white;
+}
+
+fieldset form{
+    margin: 1.5em;
+}
+
+legend{
+    font-size: 2em;
+}
+
+.signin-container{
+    color: #a7aafa;
+    background-color: white;
+    height: 45em;
+    padding: .6em;
+    border: #878bfc 2px solid;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(1,1,1,1);
+    margin-top: 5em;
+}
+
+
+.btn{
+    margin: .3em;
+    font-size: 1em;
+    background-color: #878bfc;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: .3em;
+    border-radius: 10px;
+}
+.btn a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}

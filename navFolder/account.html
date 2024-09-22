@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="account.css" />
+  </head>
+  <body>
+    <div class="profile-container">
+      <div class="profile-card">
+        <button class="back-button" onclick="history.back()">
+          &#8592; Back
+        </button>
+        <div class="profile-header">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="User Photo"
+            class="profile-photo"
+          />
+          <h2>John Doe</h2>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value="johndoe@example.com"
+            readonly
+          /><br />
+        </div>
+        <div class="profile-details">
+          <div class="detail">
+            <strong>Phone:</strong>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value="+1234567890"
+              class="editable-input"
+              readonly
+            />
+          </div>
+          <div class="detail">
+            <strong>Gender:</strong>
+            <select id="gender" name="gender" class="editable-input">
+              <option value="male" selected>Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="detail">
+            <strong>Password:</strong>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value="mypassword"
+              class="editable-input"
+            />
+          </div>
+          <div class="detail">
+            <strong>Address:</strong>
+            <input
+              type="tel"
+              id="phone"
+              name="address"
+              value="Vancouver"
+              class="editable-input"
+              readonly
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

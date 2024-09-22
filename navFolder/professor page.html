@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor ID Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        .id-card {
+            background-color: white;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .id-card-header {
+            background-color: #007bff;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .id-card-header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .id-card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .id-card-body img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+
+        .id-card-body h3 {
+            margin: 10px 0;
+            font-size: 22px;
+        }
+
+        .id-card-body p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .id-card-footer {
+            background-color: #f7f7f7;
+            padding: 15px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .id-card-footer a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .id-card-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Back Button -->
+<a href="javascript:history.back()" class="back-button">← Back</a>
+
+<div class="id-card">
+    <div class="id-card-header">
+        <h2>Professor ID Card</h2>
+    </div>
+    <div class="id-card-body">
+        <img src="https://via.placeholder.com/120" alt="Professor Photo">
+        <h3>Dr. John Doe</h3>
+        <p><strong>Email:</strong> johndoe@university.com</p>
+        <p><strong>Mobile:</strong> +1 234-567-890</p>
+        <p><strong>Specialization:</strong> Artificial Intelligence, Machine Learning</p>
+        <p><strong>Department:</strong> Computer Science</p>
+    </div>
+    <div class="id-card-footer">
+        <a href="mailto:johndoe@university.com">Contact Professor</a>
+    </div>
+</div>
+
+</body>
+</html>

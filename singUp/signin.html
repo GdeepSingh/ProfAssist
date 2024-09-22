@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <script src="../javascript/data.js" defer></script>
+    <div class="signin-container">
+        <h1>Prof<span>Assist</span></h1>
+
+        <fieldset>
+            <legend>Sign Up</legend>
+            <form id="fname singupForm" action="login.php" method="post">First Name* <input required type="text"></form>
+            <form id="lname singupForm" action="login.php" method="post">Last Name* <input required type="text"></form>
+            <form id="email singupForm" action="login.php" method="post">Email* <input required type="text"></form>
+            <form id="pass singupForm" action="login.php" method="post">Create Paswword* <input required type="text">
+            </form>
+            <fieldset>
+                <ul>
+                    <li>A Lower Case</li>
+                    <li>An Upper Case</li>
+                    <li>A Number</li>
+                    <li>A Minimum 8 Characters</li>
+                    <li>One Sign</li>
+                </ul>
+            </fieldset>
+            <form id="pass signUpForm" action="login.php" method="post">Confirm Password* <input required type="text">
+            </form>
+            <br>
+            <br>
+            <div class="btn"><a id="signinButton" href="index (1).html">Sign Up</a></div>
+        </fieldset>
+    </div>
+
+     <!-- Firebase Libraries -->
+     <!-- <script src="https://www.gstatic.com/firebasejs/9.12.0/firebase-app.js" defer></script>
+     <script src="https://www.gstatic.com/firebasejs/9.12.0/firebase-auth.js" defer></script>
+     <script src="https://www.gstatic.com/firebasejs/9.12.0/firebase-database.js" defer></script>-->
+     <script src="https://www.gstatic.com/firebasejs/9.12.0/firebase-app-compat.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/9.12.0/firebase-firestore-compat.js" ></script>
+     <script src="https://www.gstatic.com/firebasejs/9.12.0/firebase-auth-compat.js" ></script>
+     <!-- Load data.js after Firebase Libraries -->
+     <script src="../javascript/data.js" ></script>
+</body>
+
+</html>

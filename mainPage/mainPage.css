@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bcbefa;
+}
+
+.wrapper{
+    background-color: white;
+    display: grid;
+    
+    padding: 10px;
+
+}
+
+.headerArea{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar {
+    position: fixed;
+    left: -200px; /* Start off-screen */
+    top: 0;
+    width: 200px;
+    height: 100vh; /* Full height */
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    transition: left 0.5s ease; /* Smooth slide-in animation */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.navbar.open {
+    left: 0; /* Slide in from the left */
+}
+
+/* Close Button (Cross) */
+.close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    align-self: flex-end; /* Position the cross to the top-right */
+    margin-right: 10px;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Navbar link styles */
+.navbar .link {
+    margin: 1em 0;
+}
+
+.navbar .link a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main content should adjust when navbar is opened */
+
+.navbar.open ~ .main {
+    padding-left: 200px; /* Push main content when navbar is open */
+}
+
+/* Ensure responsive behavior */
+@media (min-width: 768px) {
+    .navbar {
+        left: 0; /* Always visible on larger screens */
+    }
+
+    .main {
+        padding-left: 200px; /* Content is always pushed to the right */
+    }
+}
+
+.header-Action{
+    margin-top: .2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+.name{
+    align-self: center;
+    text-align: center;
+}
+h1{
+    font-size: 3em;
+    color: #bcbefa;
+}
+h3{
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.line{
+    background-color: #bcbefa;
+    width: 21em;
+    height: .5em;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#searchBar{
+    width: auto;
+    border-radius: 10px;
+}
+
+
+.main{
+    display: grid;
+}
+
+.main p{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.profIdCard{
+    background-color: black;
+    width: 21em;
+    height: 4em;
+
+    margin-left: .5em;
+    margin-bottom: 1em;
+}
+
+.courseCard{
+    background-color: black;
+    width: 21em;
+    height: 4em;
+
+    margin-left: .5em;
+    margin-bottom: 1em;
+}
+
+.review-container{
+    margin-top: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 22em;
+    height: 6em;
+    padding: 10px;
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    border: 2px solid black; /* Optional: Just for visibility */
+}
+
+.review{
+    flex: 0 0 auto;
+    width: 15em;
+    height: 3.2em;
+    margin: .3em;
+    background-color: aqua;
+    border: #bcbefa 1px solid;
+   
+}
+
+.footer-container{
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22.5em;
+    height: 10em;
+    background-color: #bcbefa;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-container a{
+    text-decoration: none;
+    color: black;
+    margin: .3em;
+}
+
